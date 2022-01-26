@@ -21,10 +21,10 @@ fly
 
 ---
 ### How to use
-[ENG] Do the command below and follow the instruction simply 
+[ENG] Do the command ```/ag``` and follow the instruction simply 
 
-[FRA] Faire la commande ci-dessous et suivre les instructions tout simplement</br>
-```/ag```
+[FRA] Faire la commande ```/ag``` et suivre les instructions tout simplement</br>
+
 
 ---
 ### **This plugin was tested (and works) on:**

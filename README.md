@@ -1,14 +1,14 @@
 # AreaGuard-HiroTeam
-### About
 ![AreaGuard](https://user-images.githubusercontent.com/76572999/151222006-b93a3691-29c4-4942-8d53-58ef6e52dbbc.png)
 
+### About
 
 [ENG] This is a [PocketMine-MP](https://github.com/pmmp/PocketMine-MP) (or forks) plugin allows you to protect your areas ! ! :grin: <br/>
 <br/>
 [FRA] C'est un [PocketMine-MP](https://github.com/pmmp/PocketMine-MP) plugin qui vous permet de protéger vos zones ! :grin: <br/>
 
-```
 Fonctionnality
+```
 place
 break
 use
@@ -21,9 +21,10 @@ fly
 
 ---
 ### How to use
-[ENG] Do /ag command and follow the instruction simply 
+[ENG] Do the command below and follow the instruction simply 
 
-[FRA] Faire la commande /ag et suivre les instructions tout simplement</br>
+[FRA] Faire la commande ci-dessous et suivre les instructions tout simplement</br>
+```/ag```
 
 ---
 ### **This plugin was tested (and works) on:**

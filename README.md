@@ -7,24 +7,21 @@
 <br/>
 [FRA] C'est un [PocketMine-MP](https://github.com/pmmp/PocketMine-MP) plugin qui vous permet de protéger vos zones ! :grin: <br/>
 
-Fonctionnality
-```
-place
-break
-use
-pvp
-damage
-drop
-explosion
-fly
-```
-
 ---
 ### How to use
 [ENG] Do the command ```/ag``` and follow the instruction simply 
 
 [FRA] Faire la commande ```/ag``` et suivre les instructions tout simplement</br>
-
+- **Features** <br/>
+  - ```place, break, use, pvp, damage, drop, explosion, fly```
+- **Permissions** <br/>
+> | Permission | Allow to |
+> |--|--|
+> | ```place.AREA_NAME``` | place block |
+> | ```break.AREA_NAME``` | break block |
+> | ```use.AREA_NAME``` | use/interact |
+> | ```drop.AREA_NAME``` | drop |
+> | ```fly.AREA_NAME``` | fly |
 
 ---
 ### **This plugin was tested (and works) on:**

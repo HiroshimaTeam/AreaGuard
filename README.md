@@ -3,7 +3,7 @@
 
 ### About
 
-`[ENG]` This is a [PocketMine-MP](https://github.com/pmmp/PocketMine-MP) (or forks) plugin allows you to protect your areas ! ! :grin: <br/>
+`[ENG]` This is a [PocketMine-MP](https://github.com/pmmp/PocketMine-MP) (or forks) plugin allows you to protect your areas ! :grin: <br/>
 <br/>
 `[FRA]` C'est un [PocketMine-MP](https://github.com/pmmp/PocketMine-MP) plugin qui vous permet de protéger vos zones ! :grin: <br/>
 

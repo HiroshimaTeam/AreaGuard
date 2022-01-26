@@ -15,28 +15,18 @@
 - **Features** <br/>
   - ```place, break, use, pvp, damage, drop, explosion, fly```
 - **Permissions** <br/>
-> | Permission | Allow to |
-> |--|--|
-> | ```place.AREA_NAME``` | place block |
-> | ```break.AREA_NAME``` | break block |
-> | ```use.AREA_NAME``` | use/interact |
-> | ```drop.AREA_NAME``` | drop |
-> | ```fly.AREA_NAME``` | fly |
+   | Permission | Allow to |
+   |--|--|
+   | ```place.AREA_NAME``` | place block |
+   | ```break.AREA_NAME``` | break block |
+   | ```use.AREA_NAME``` | use/interact |
+   | ```drop.AREA_NAME``` | drop |
+   | ```fly.AREA_NAME``` | fly |
 
 ---
 ### **This plugin was tested (and works) on:**
 
 - [x] **[PocketMine-MP 4.X.X](https://github.com/pmmp/PocketMine-MP)**
----
-### **LordHosting Partner**
-
-- `[ENG]` Our team is in partnership with Lordhosting, Minecraft PE server Hosting, VPS hosting use reduction code __**HiroTeam**__ 10% FREE </br>
--> Website : https://clients.lordhosting.fr </br>
--> Discord : https://discord.gg/mZe6XCwsm9 </br>
-
-- `[FRA]` Notre équipe est en partenariat avec Lordhosting, hébergement de serveurs Minecraft PE, VPS utilise le code de réduction __**HiroTeam**__ 10% DE REDUCTION </br>
--> Site Web: https://clients.lordhosting.fr </br>
--> Discord : https://discord.gg/mZe6XCwsm9 </br>
 ---
 ### Contacts HiroTeam
 
@@ -63,5 +53,22 @@ This plugin is licensed under the [GPLv3](http://www.gnu.org/licenses/gpl-3.0.ht
 >You should have received a copy of the GNU General Public License<br/>
 >along with this program.  If not, see http://www.gnu.org/licenses/
 ---
+### Languages contributors
+  | Language | Author |
+  |--|--|
+  | ```Français``` | WillyDuGang |
+  | ```English``` | WillyDuGang |
+  | ```...``` | **[Maybe you](https://discord.gg/WuwsuUA)** 😍|
+---
 ### Author
 - **Discord:** WillyDuGang#6947
+---
+### **LordHosting Partner**
+
+- `[ENG]` Our team is in partnership with Lordhosting, Minecraft PE server Hosting, VPS hosting use reduction code __**HiroTeam**__ 10% FREE </br>
+-> Website : https://clients.lordhosting.fr </br>
+-> Discord : https://discord.gg/mZe6XCwsm9 </br>
+
+- `[FRA]` Notre équipe est en partenariat avec Lordhosting, hébergement de serveurs Minecraft PE, VPS utilise le code de réduction __**HiroTeam**__ 10% DE REDUCTION </br>
+-> Site Web: https://clients.lordhosting.fr </br>
+-> Discord : https://discord.gg/mZe6XCwsm9 </br>

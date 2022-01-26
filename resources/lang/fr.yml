@@ -1,0 +1,44 @@
+UI_AREAGUARD_TITLE: 'AreaGuard par §4Hiro§bTeam'
+
+UI_MANAGE_AREAS_BUTTON: 'Gérer les zones'
+UI_MANAGE_LANG_BUTTON: 'Choisir la langue'
+
+UI_SELECT_LANG_DROPDOWN: 'Selectionne ta langue'
+
+UI_NEW_AREA_BUTTON: 'Ajouter une nouvelle zone'
+
+UI_REDEFINE_AREA_TOGGLE: 'Redefinir les points de la zone'
+UI_DELETE_AREA_TOGGLE: '§cSupprimer la zone'
+
+UI_SET_AREA_NAME_INPUT: 'Mettre le nom de la zone'
+UI_EXPAND_VERTICALLY_TOGGLE: 'Expandre verticalement'
+
+UI_RETURN_BUTTON: 'Retour'
+UI_QUIT_BUTTON: 'Quitter'
+
+
+SUCCESS_CHANGE_LANG_MESSAGE: '§aTu as changer avec succés la langue à {lang}'
+FAIL_CHANGE_LANG_MESSAGE: '§cLa langue est déjà en {lang}'
+
+DELETE_AREA_MESSAGE: '§aTu as supprimer avec succés la zone {area}'
+MODIFIE_SETTING_MESSAGE: '§aTu as modifié avec succés les paramètres de la zone {area}{line}{setting}'
+
+
+AREA_NAME_INVALID_MESSAGE: '§cNom de la zone invalide'
+SELECT_TWO_POINT_AREA: '§aTu dois sélectionner 2 points pour la zone {area}'
+SET_FIRST_POSITION_MESSAGE: '§aTu as bien mit la première position sur {x} | {y} | {z} | {world}'
+SET_SECOND_POSITION_MESSAGE: '§aTu as bien mit la seconde position sur {x} | {y} | {z} | {world}'
+WORLD_MUST_BE_THE_SAME: '§cTu dois sélectionner 2 points dans le même monde'
+SUCCESS_CREATE_NEW_AREA: '§aTu as bien crée une nouvelle zone {area} dans le monde {world}'
+SUCCESS_REDEFINE_AREA: '§aTu as redéfini avec succés les points de la zone {area}'
+
+SETTINGS:
+  priority: 'Priorité'
+  place: 'Placer des blocs'
+  break: 'Casser des blocs'
+  use: 'Utiliser'
+  pvp: 'Pvp'
+  damage: 'Dommage'
+  drop: 'Drop'
+  explosion: 'Explosion'
+  fly: 'Fly'

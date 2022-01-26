@@ -1,0 +1,44 @@
+UI_AREAGUARD_TITLE: 'AreaGuard by §4Hiro§bTeam'
+
+UI_MANAGE_AREAS_BUTTON: 'Manage areas'
+UI_MANAGE_LANG_BUTTON: 'Change the language'
+
+UI_SELECT_LANG_DROPDOWN: 'Select your language'
+
+UI_NEW_AREA_BUTTON: 'Add a new area'
+
+UI_REDEFINE_AREA_TOGGLE: 'Redefine area point'
+UI_DELETE_AREA_TOGGLE: '§cDelete area'
+
+UI_SET_AREA_NAME_INPUT: 'Set area name'
+UI_EXPAND_VERTICALLY_TOGGLE: 'Expand vertically'
+
+UI_RETURN_BUTTON: 'Return'
+UI_QUIT_BUTTON: 'Quit'
+
+
+SUCCESS_CHANGE_LANG_MESSAGE: '§aYou have successfully change the language to {lang}'
+FAIL_CHANGE_LANG_MESSAGE: '§cThe language is already in {lang}'
+
+DELETE_AREA_MESSAGE: '§aYou have successfully delete {area} area'
+MODIFIE_SETTING_MESSAGE: '§aYou have successfully modify {area} area setting(s){line}{setting}'
+
+
+AREA_NAME_INVALID_MESSAGE: '§cArea name is invalid'
+SELECT_TWO_POINT_AREA: '§aYou must select 2 points for area {area}'
+SET_FIRST_POSITION_MESSAGE: '§aYou have successfully set the first position to {x} | {y} | {z} | {world}'
+SET_SECOND_POSITION_MESSAGE: '§aYou have successfully set the second position to {x} | {y} | {z} | {world}'
+WORLD_MUST_BE_THE_SAME: '§cYou must select two point with the same world'
+SUCCESS_CREATE_NEW_AREA: '§aYou have successfully create a new area {area} in world {world}'
+SUCCESS_REDEFINE_AREA: '§aYou have successfully redefine area {area}'
+
+SETTINGS:
+    priority: 'Priority'
+    place: 'Place block'
+    break: 'Break block'
+    use: 'Use'
+    pvp: 'Pvp'
+    damage: 'Damage'
+    drop: 'Drop'
+    explosion: 'Explosion'
+    fly: 'Fly'

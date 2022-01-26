@@ -1,4 +1,4 @@
-# AreaGuard-HiroTeam
+# AreaGuard-HiroTeam [API 4]
 ![AreaGuard](https://user-images.githubusercontent.com/76572999/151222006-b93a3691-29c4-4942-8d53-58ef6e52dbbc.png)
 
 ### About

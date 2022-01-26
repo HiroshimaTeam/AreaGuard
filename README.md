@@ -29,7 +29,7 @@ fly
 ---
 ### **This plugin was tested (and works) on:**
 
-- [x] **[PocketMine-MP](https://github.com/pmmp/PocketMine-MP)**
+- [x] **[PocketMine-MP 4.X.X](https://github.com/pmmp/PocketMine-MP)**
 ---
 ### **LordHosting Partner**
 

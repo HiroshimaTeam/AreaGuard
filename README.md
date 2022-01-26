@@ -3,15 +3,15 @@
 
 ### About
 
-[ENG] This is a [PocketMine-MP](https://github.com/pmmp/PocketMine-MP) (or forks) plugin allows you to protect your areas ! ! :grin: <br/>
+`[ENG]` This is a [PocketMine-MP](https://github.com/pmmp/PocketMine-MP) (or forks) plugin allows you to protect your areas ! ! :grin: <br/>
 <br/>
-[FRA] C'est un [PocketMine-MP](https://github.com/pmmp/PocketMine-MP) plugin qui vous permet de protéger vos zones ! :grin: <br/>
+`[FRA]` C'est un [PocketMine-MP](https://github.com/pmmp/PocketMine-MP) plugin qui vous permet de protéger vos zones ! :grin: <br/>
 
 ---
 ### How to use
-[ENG] Do the command ```/ag``` and follow the instruction simply 
+`[ENG]` Do the command ```/ag``` and follow the instruction simply 
 
-[FRA] Faire la commande ```/ag``` et suivre les instructions tout simplement</br>
+`[FRA]` Faire la commande ```/ag``` et suivre les instructions tout simplement</br>
 - **Features** <br/>
   - ```place, break, use, pvp, damage, drop, explosion, fly```
 - **Permissions** <br/>
@@ -30,11 +30,11 @@
 ---
 ### **LordHosting Partner**
 
-- [ENG] Our team is in partnership with Lordhosting, Minecraft PE server Hosting, VPS hosting use reduction code __**HiroTeam**__ 10% FREE </br>
+- `[ENG]` Our team is in partnership with Lordhosting, Minecraft PE server Hosting, VPS hosting use reduction code __**HiroTeam**__ 10% FREE </br>
 -> Website : https://clients.lordhosting.fr </br>
 -> Discord : https://discord.gg/mZe6XCwsm9 </br>
 
-- [FRA] Notre équipe est en partenariat avec Lordhosting, hébergement de serveurs Minecraft PE, VPS utilise le code de réduction __**HiroTeam**__ 10% DE REDUCTION </br>
+- `[FRA]` Notre équipe est en partenariat avec Lordhosting, hébergement de serveurs Minecraft PE, VPS utilise le code de réduction __**HiroTeam**__ 10% DE REDUCTION </br>
 -> Site Web: https://clients.lordhosting.fr </br>
 -> Discord : https://discord.gg/mZe6XCwsm9 </br>
 ---

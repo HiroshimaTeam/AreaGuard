@@ -73,7 +73,8 @@ class Area
 
     public function hasPermission(Player $player, string $action): bool
     {
-        if (Server::getInstance()->isOp($player->getName())) return true;
-        return $player->hasPermission($action . '.' . $this->areaName);
+        return $player->hasPermission($action . '.' . $this->areaName) or
+            $player->hasPermission($action . '.' . '*') or
+            Server::getInstance()->isOp($player->getName());
     }
 }

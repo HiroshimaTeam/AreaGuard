@@ -133,6 +133,13 @@ class AreaManager
         return true;
     }
 
+    public function onInterruptCreateArea(Player $player){
+        $playerName = $player->getName();
+        if (isset($this->processCreationNewArea[$playerName])) {
+            unset($this->processCreationNewArea[$playerName]);
+        }
+    }
+
     private function createNewArea(string $areaName, Position $position1, Position $position2, array $settings = [])
     {
         $this->area[$areaName] = new Area($areaName, $position1, $position2, empty($settings) ? self::DEFAULT_AREA_SETTINGS : $settings);

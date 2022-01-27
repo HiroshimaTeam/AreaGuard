@@ -18,6 +18,7 @@ use HiroTeam\AreaGuard\AreaGuardMain;
 use pocketmine\event\block\BlockBreakEvent;
 use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerInteractEvent;
+use pocketmine\event\player\PlayerQuitEvent;
 
 class SetAreaPositionListener implements Listener
 {
@@ -43,5 +44,9 @@ class SetAreaPositionListener implements Listener
         if($this->main->getAreaManager()->onCreateNewAreaInteraction($event->getPlayer(), $event->getBlock())){
             $event->cancel();
         }
+    }
+
+    public function onQuit(PlayerQuitEvent $event){
+        $this->main->getAreaManager()->onInterruptCreateArea($event->getPlayer());
     }
 }

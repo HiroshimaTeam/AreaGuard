@@ -22,7 +22,7 @@
    | ```use.AREA_NAME``` | use/interact |
    | ```drop.AREA_NAME``` | drop |
    | ```fly.AREA_NAME``` | fly |
-   | ```If AREA_NAME = *``` | Authorize all areas |
+   | ```AREA_NAME = *``` | Authorize all areas |
 
 ---
 ### **This plugin was tested (and works) on:**

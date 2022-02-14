@@ -13,8 +13,8 @@
 
 `[FRA]` Faire la commande ```/ag``` et suivre les instructions tout simplement</br>
 - **Features** <br/>
-  - ```place, break, use, pvp, damage, drop, explosion, fly```
-  - ```Soon: hunger, blocked commands list, chat, effects list, msg enter area, msg quit area```
+  - ```place, break, use, pvp, damage, drop, explosion, fly, hunger```
+  - ```Soon: blocked commands list, chat, effects list, msg enter area, msg quit area```
 - **Permissions** <br/>
    | Permission | Allow to |
    |--|--|

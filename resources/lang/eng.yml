@@ -42,3 +42,4 @@ SETTINGS:
     drop: 'Drop'
     explosion: 'Explosion'
     fly: 'Fly'
+    hunger: 'Hunger'

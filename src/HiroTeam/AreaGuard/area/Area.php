@@ -34,6 +34,11 @@ class Area
         foreach ($settings as $setting => $value) {
             $this->{$setting} = $value;
         }
+        foreach (AreaManager::DEFAULT_AREA_SETTINGS as $setting => $value) {
+            if (!isset($this->{$setting})) {
+                $this->{$setting} = $value;
+            }
+        }
     }
 
     public function setSettings(array $settings)

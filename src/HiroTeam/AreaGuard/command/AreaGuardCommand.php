@@ -13,14 +13,12 @@
 
 namespace HiroTeam\AreaGuard\command;
 
-use HiroTeam\AreaGuard\AreaGuardMain;
 use HiroTeam\AreaGuard\form\OpenAreaGuardUI;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
 use pocketmine\player\Player;
-use pocketmine\plugin\PluginOwned;
 
-class AreaGuardCommand extends Command implements PluginOwned
+class AreaGuardCommand extends Command
 {
     public function __construct()
     {
@@ -36,10 +34,5 @@ class AreaGuardCommand extends Command implements PluginOwned
         }
         new OpenAreaGuardUI($sender);
         return true;
-    }
-    
-    public function getOwningPlugin(): AreaGuardMain
-    {
-       return AreaGuardMain::getInstance();
     }
 }

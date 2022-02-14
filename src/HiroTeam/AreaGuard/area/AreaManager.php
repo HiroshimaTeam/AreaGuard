@@ -30,7 +30,8 @@ class AreaManager
         'damage' => false,
         'drop' => true,
         'explosion' => false,
-        'fly' => false
+        'fly' => false,
+        'hunger' => true
     ];
 
     private AreaGuardMain $main;
@@ -61,11 +62,7 @@ class AreaManager
                 new Position($data['x2'], $data['y2'], $data['z2'], $world),
                 $data['settings']
             );
-            foreach (self::DEFAULT_AREA_SETTINGS as $setting => $value) {
-                if (!isset($this->area[$areaName]->{$setting})) {
-                    $this->area[$areaName]->{$setting} = $value;
-                }
-            }
+
         }
     }
 

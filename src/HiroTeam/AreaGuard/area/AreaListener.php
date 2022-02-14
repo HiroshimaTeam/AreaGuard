@@ -22,7 +22,9 @@ use pocketmine\event\entity\EntityDamageEvent;
 use pocketmine\event\entity\EntityExplodeEvent;
 use pocketmine\event\entity\ExplosionPrimeEvent;
 use pocketmine\event\Listener;
+use pocketmine\event\player\PlayerChatEvent;
 use pocketmine\event\player\PlayerDropItemEvent;
+use pocketmine\event\player\PlayerExhaustEvent;
 use pocketmine\event\player\PlayerInteractEvent;
 use pocketmine\event\player\PlayerToggleFlightEvent;
 use pocketmine\player\Player;
@@ -39,6 +41,23 @@ class AreaListener implements Listener
         $this->areaManager = $areaManager;
     }
 
+    /**
+     * @param PlayerExhaustEvent $event
+     * @priority LOWEST
+     */
+    public function onExhaust(PlayerExhaustEvent $event){
+        $player = $event->getPlayer();
+        $area = $this->areaManager->getAreaByPosition($player->getPosition());
+        if (!$area) return;
+        if ($area->hunger){
+            $event->cancel();
+        }
+    }
+
+    /**
+     * @param BlockPlaceEvent $event
+     * @priority LOWEST
+     */
     public function onPlace(BlockPlaceEvent $event)
     {
 
@@ -51,6 +70,10 @@ class AreaListener implements Listener
         }
     }
 
+    /**
+     * @param BlockBreakEvent $event
+     * @priority LOWEST
+     */
     public function onBreak(BlockBreakEvent $event)
     {
         $area = $this->areaManager->getAreaByPosition($event->getBlock()->getPosition());
@@ -62,6 +85,10 @@ class AreaListener implements Listener
         }
     }
 
+    /**
+     * @param PlayerInteractEvent $event
+     * @priority LOWEST
+     */
     public function onUse(PlayerInteractEvent $event)
     {
         $area = $this->areaManager->getAreaByPosition($event->getBlock()->getPosition());
@@ -74,6 +101,10 @@ class AreaListener implements Listener
         }
     }
 
+    /**
+     * @param EntityDamageEvent $event
+     * @priority LOWEST
+     */
     public function onDamage(EntityDamageEvent $event)
     {
         $player = $event->getEntity();
@@ -100,6 +131,10 @@ class AreaListener implements Listener
         }
     }
 
+    /**
+     * @param EntityDamageByBlockEvent $event
+     * @priority LOWEST
+     */
     public function blockExplode(EntityDamageByBlockEvent $event)
     {
         $player = $event->getEntity();
@@ -111,6 +146,10 @@ class AreaListener implements Listener
         }
     }
 
+    /**
+     * @param EntityDamageByEntityEvent $event
+     * @priority LOWEST
+     */
     public function damageByEntity(EntityDamageByEntityEvent $event)
     {
         $player = $event->getEntity();
@@ -123,6 +162,10 @@ class AreaListener implements Listener
         }
     }
 
+    /**
+     * @param PlayerDropItemEvent $event
+     * @priority LOWEST
+     */
     public function onDrop(PlayerDropItemEvent $event)
     {
         $player = $event->getPlayer();
@@ -134,6 +177,10 @@ class AreaListener implements Listener
         }
     }
 
+    /**
+     * @param ExplosionPrimeEvent $event
+     * @priority LOWEST
+     */
     public function onExplosion(ExplosionPrimeEvent $event)
     {
         $area = $this->areaManager->getAreaByPosition($event->getEntity()->getPosition());
@@ -143,6 +190,10 @@ class AreaListener implements Listener
         }
     }
 
+    /**
+     * @param EntityExplodeEvent $event
+     * @priority LOWEST
+     */
     public function onExplosionBlock(EntityExplodeEvent $event)
     {
         $finalBlocks = [];
@@ -161,6 +212,10 @@ class AreaListener implements Listener
         $event->setBlockList($finalBlocks);
     }
 
+    /**
+     * @param PlayerToggleFlightEvent $event
+     * @priority LOWEST
+     */
     public function onFly(PlayerToggleFlightEvent $event)
     {
         $player = $event->getPlayer();

@@ -43,7 +43,7 @@ class AreaListener implements Listener
 
     /**
      * @param PlayerExhaustEvent $event
-     * @priority LOWEST
+     * @priority LOW
      */
     public function onExhaust(PlayerExhaustEvent $event){
         $player = $event->getPlayer();
@@ -56,7 +56,7 @@ class AreaListener implements Listener
 
     /**
      * @param BlockPlaceEvent $event
-     * @priority LOWEST
+     * @priority LOW
      */
     public function onPlace(BlockPlaceEvent $event)
     {
@@ -72,7 +72,7 @@ class AreaListener implements Listener
 
     /**
      * @param BlockBreakEvent $event
-     * @priority LOWEST
+     * @priority LOW
      */
     public function onBreak(BlockBreakEvent $event)
     {
@@ -87,7 +87,7 @@ class AreaListener implements Listener
 
     /**
      * @param PlayerInteractEvent $event
-     * @priority LOWEST
+     * @priority LOW
      */
     public function onUse(PlayerInteractEvent $event)
     {
@@ -103,7 +103,7 @@ class AreaListener implements Listener
 
     /**
      * @param EntityDamageEvent $event
-     * @priority LOWEST
+     * @priority LOW
      */
     public function onDamage(EntityDamageEvent $event)
     {
@@ -133,7 +133,7 @@ class AreaListener implements Listener
 
     /**
      * @param EntityDamageByBlockEvent $event
-     * @priority LOWEST
+     * @priority LOW
      */
     public function blockExplode(EntityDamageByBlockEvent $event)
     {
@@ -148,7 +148,7 @@ class AreaListener implements Listener
 
     /**
      * @param EntityDamageByEntityEvent $event
-     * @priority LOWEST
+     * @priority LOW
      */
     public function damageByEntity(EntityDamageByEntityEvent $event)
     {
@@ -164,7 +164,7 @@ class AreaListener implements Listener
 
     /**
      * @param PlayerDropItemEvent $event
-     * @priority LOWEST
+     * @priority LOW
      */
     public function onDrop(PlayerDropItemEvent $event)
     {
@@ -179,7 +179,7 @@ class AreaListener implements Listener
 
     /**
      * @param ExplosionPrimeEvent $event
-     * @priority LOWEST
+     * @priority LOW
      */
     public function onExplosion(ExplosionPrimeEvent $event)
     {
@@ -192,7 +192,7 @@ class AreaListener implements Listener
 
     /**
      * @param EntityExplodeEvent $event
-     * @priority LOWEST
+     * @priority LOW
      */
     public function onExplosionBlock(EntityExplodeEvent $event)
     {
@@ -214,7 +214,7 @@ class AreaListener implements Listener
 
     /**
      * @param PlayerToggleFlightEvent $event
-     * @priority LOWEST
+     * @priority LOW
      */
     public function onFly(PlayerToggleFlightEvent $event)
     {

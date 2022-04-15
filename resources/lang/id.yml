@@ -1,0 +1,45 @@
+UI_AREAGUARD_TITLE: 'AreaGuard oleh §4Hiro§bTeam'
+
+UI_MANAGE_AREAS_BUTTON: 'Kelola area'
+UI_MANAGE_LANG_BUTTON: 'Ganti bahasa'
+
+UI_SELECT_LANG_DROPDOWN: 'Pilih bahasa kamu'
+
+UI_NEW_AREA_BUTTON: 'Tambah area baru'
+
+UI_REDEFINE_AREA_TOGGLE: 'Definisikan titik area kembali'
+UI_DELETE_AREA_TOGGLE: '§cHapus area'
+
+UI_SET_AREA_NAME_INPUT: 'Terapkan nama area'
+UI_EXPAND_VERTICALLY_TOGGLE: 'Perluas secara vertikal'
+
+UI_RETURN_BUTTON: 'Kembali'
+UI_QUIT_BUTTON: 'Keluar'
+
+
+SUCCESS_CHANGE_LANG_MESSAGE: '§aAnda telah berhasil mengubah menjadi bahasa {lang}'
+FAIL_CHANGE_LANG_MESSAGE: '§cBahasa sudah dalam {lang}'
+
+DELETE_AREA_MESSAGE: '§aAnda telah berhasil mengapus {area} area'
+MODIFIE_SETTING_MESSAGE: '§aAnda telah berhasil mengubah setelan area {area} area setting(s){line}{setting}'
+
+
+AREA_NAME_INVALID_MESSAGE: '§cNama area tidak valid'
+SELECT_TWO_POINT_AREA: '§aAnda harus memilih 2 titik untuk area {area}'
+SET_FIRST_POSITION_MESSAGE: '§aAnda telah berhasil mengatur posisi pertama {x} | {y} | {z} | {world}'
+SET_SECOND_POSITION_MESSAGE: '§aAnda telah berhasil mengatur posisi kedua {x} | {y} | {z} | {world}'
+WORLD_MUST_BE_THE_SAME: '§cAnda harus memilih 2 titik di dunia {world}'
+SUCCESS_CREATE_NEW_AREA: '§aAnda telah berhasil membuat area baru {area} di dunia {world}'
+SUCCESS_REDEFINE_AREA: '§aAnda telah berhasil mendefinisikan ulang area {area}'
+
+SETTINGS:
+    priority: 'Prioritas'
+    place: 'Letak block'
+    break: 'Hancurkan block'
+    use: 'Gunakan'
+    pvp: 'Pvp'
+    damage: 'Kerusakan'
+    drop: 'Menjatuhkan'
+    explosion: 'Ledakan'
+    fly: 'Terbang'
+    hunger: 'Lapar'

@@ -1,7 +1,7 @@
 name: AreaGuard-HiroTeam
 author: HiroTeam-Willy
 version: 1.0.5
-api: 4.0.0
+api: 5.0.0
 main: HiroTeam\AreaGuard\AreaGuardMain
 website: https://github.com/HiroshimaTeam
     

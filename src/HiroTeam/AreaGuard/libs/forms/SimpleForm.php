@@ -16,71 +16,48 @@ declare(strict_types = 1);
 namespace HiroTeam\AreaGuard\libs\forms;
 
 class SimpleForm extends Form {
+	const IMAGE_TYPE_PATH = 0;
+	const IMAGE_TYPE_URL = 1;
+	private string $content = "";
+	private array $labelMap = [];
 
-    const IMAGE_TYPE_PATH = 0;
-    const IMAGE_TYPE_URL = 1;
+	public function __construct(?callable $callable = null) {
+		parent::__construct($callable);
+		$this->data["type"] = "form";
+		$this->data["title"] = "";
+		$this->data["content"] = $this->content;
+	}
 
-    /** @var string */
-    private $content = "";
+	public function processData(&$data) : void {
+		$data = $this->labelMap[$data] ?? null;
+	}
 
-    private $labelMap = [];
+	public function setTitle(string $title) : void {
+		$this->data["title"] = $title;
+	}
 
-    /**
-     * @param callable $callable
-     */
-    public function __construct(?callable $callable = null) {
-        parent::__construct($callable);
-        $this->data["type"] = "form";
-        $this->data["title"] = "";
-        $this->data["content"] = $this->content;
-    }
+	public function getTitle() : string {
+		return $this->data["title"];
+	}
 
-    public function processData(&$data) : void {
-        $data = $this->labelMap[$data] ?? null;
-    }
+	public function getContent() : string {
+		return $this->data["content"];
+	}
 
-    /**
-     * @param string $title
-     */
-    public function setTitle(string $title) : void {
-        $this->data["title"] = $title;
-    }
+	public function setContent(string $content) : void {
+		$this->data["content"] = $content;
+	}
 
-    /**
-     * @return string
-     */
-    public function getTitle() : string {
-        return $this->data["title"];
-    }
-
-    /**
-     * @return string
-     */
-    public function getContent() : string {
-        return $this->data["content"];
-    }
-
-    /**
-     * @param string $content
-     */
-    public function setContent(string $content) : void {
-        $this->data["content"] = $content;
-    }
-
-    /**
-     * @param string $text
-     * @param int $imageType
-     * @param string $imagePath
-     * @param mixed $label
-     */
-    public function addButton(string $text, int $imageType = -1, string $imagePath = "", $label = null) : void {
-        $content = ["text" => $text];
-        if($imageType !== -1) {
-            $content["image"]["type"] = $imageType === 0 ? "path" : "url";
-            $content["image"]["data"] = $imagePath;
-        }
-        $this->data["buttons"][] = $content;
-        $this->labelMap[] = $label ?? count($this->labelMap);
-    }
-
+	/**
+	 * @param mixed $label
+	 */
+	public function addButton(string $text, int $imageType = -1, string $imagePath = "", $label = null) : void {
+		$content = ["text" => $text];
+		if ($imageType !== -1) {
+			$content["image"]["type"] = $imageType === 0 ? "path" : "url";
+			$content["image"]["data"] = $imagePath;
+		}
+		$this->data["buttons"][] = $content;
+		$this->labelMap[] = $label ?? count($this->labelMap);
+	}
 }

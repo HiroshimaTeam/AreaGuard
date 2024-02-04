@@ -19,69 +19,50 @@ use HiroTeam\AreaGuard\area\SetAreaPositionListener;
 use HiroTeam\AreaGuard\command\AreaGuardCommand;
 use HiroTeam\AreaGuard\data\AreaDataManager;
 use HiroTeam\AreaGuard\lang\LangManager;
+use JsonException;
 use pocketmine\plugin\PluginBase;
 
-class AreaGuardMain extends PluginBase
-{
+class AreaGuardMain extends PluginBase {
+	public const DEV_MODE = false;
+	private static AreaGuardMain $main;
+	private LangManager $langManager;
+	private AreaDataManager $dataManager;
+	private AreaManager $areaManager;
 
-    public const DEV_MODE = false;
+	public static function getInstance() : AreaGuardMain {
+		return self::$main;
+	}
 
-    private static AreaGuardMain $main;
+	public function getLangManager() : LangManager {
+		return $this->langManager;
+	}
 
-    private LangManager $langManager;
-    private AreaDataManager $dataManager;
-    private AreaManager $areaManager;
+	public function getDataManager() : AreaDataManager {
+		return $this->dataManager;
+	}
 
-    /**
-     * @return AreaGuardMain
-     */
-    public static function getInstance(): AreaGuardMain
-    {
-        return self::$main;
-    }
+	public function getAreaManager() : AreaManager {
+		return $this->areaManager;
+	}
 
-    /**
-     * @return LangManager
-     */
-    public function getLangManager(): LangManager
-    {
-        return $this->langManager;
-    }
+	protected function onEnable() : void {
+		self::$main = $this;
+		if (self::DEV_MODE) {
+			$this->saveResource('config.yml', true);
+		}
+		$this->saveDefaultConfig();
+		$this->getServer()->getCommandMap()->register('AreaGuard', new AreaGuardCommand());
+		$this->dataManager = new AreaDataManager($this);
+		$this->areaManager = new AreaManager($this);
+		$this->langManager = new LangManager($this, $this->getFile() . 'resources/lang');
+		$this->getServer()->getPluginManager()->registerEvents(new SetAreaPositionListener($this), $this);
+		$this->getServer()->getPluginManager()->registerEvents(new AreaListener($this->areaManager), $this);
+	}
 
-    /**
-     * @return AreaDataManager
-     */
-    public function getDataManager(): AreaDataManager
-    {
-        return $this->dataManager;
-    }
-
-    /**
-     * @return AreaManager
-     */
-    public function getAreaManager(): AreaManager
-    {
-        return $this->areaManager;
-    }
-
-    protected function onEnable(): void
-    {
-        self::$main = $this;
-        if (self::DEV_MODE) {
-            $this->saveResource('config.yml', true);
-        }
-        $this->saveDefaultConfig();
-        $this->getServer()->getCommandMap()->register('AreaGuard', new AreaGuardCommand());
-        $this->dataManager = new AreaDataManager($this);
-        $this->areaManager = new AreaManager($this);
-        $this->langManager = new LangManager($this, $this->getFile() . 'resources/lang');
-        $this->getServer()->getPluginManager()->registerEvents(new SetAreaPositionListener($this), $this);
-        $this->getServer()->getPluginManager()->registerEvents(new AreaListener($this->areaManager), $this);
-
-    }
-
-    protected function onDisable(): void
-    {
-        $this->areaManager->save();
-    }
+	/**
+	 * @throws JsonException
+	 */
+	protected function onDisable() : void {
+		$this->areaManager->save();
+	}
 }
